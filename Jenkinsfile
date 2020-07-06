@@ -7,6 +7,10 @@ node{
    bat 'mvn clean'
    
    }
+   stage('Test'){
+   bat 'mvn test'
+   
+   }
    stage('Install'){
    bat 'mvn package'
    
