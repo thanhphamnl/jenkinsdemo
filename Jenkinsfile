@@ -4,11 +4,11 @@ node{
    }
    
    stage('Clean'){
-   sh 'mvn clean'
+   bat 'mvn clean'
    
    }
    stage('Install'){
-   sh 'mvn package'
+   bat 'mvn package'
    
    }
 }

@@ -21,6 +21,7 @@ public class GoogleSearch {
 //		WebElement GoogleSearch = driver.findElement(By.name("q"));
 //		GoogleSearch.sendKeys("Selenium");
 //		GoogleSearch.submit();
+		
 		WebDriver driver;
 		System.setProperty("webdriver.gecko.driver", "./resources/geckodriver.exe");
 		driver = new FirefoxDriver();
@@ -28,7 +29,7 @@ public class GoogleSearch {
 		// https://www.redbus.in
 		//logger = extent.createTest("Verify www.google.com Title");
 		driver.get("http://www.google.com");
-		Thread.sleep(3000); // pause for 3 sec
+		Thread.sleep(10000); // pause for 3 sec
 		WebElement GoogleSearch = driver.findElement(By.name("q"));
 		GoogleSearch.sendKeys("Selenium");
 		GoogleSearch.submit();		
