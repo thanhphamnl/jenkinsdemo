@@ -4,15 +4,14 @@ node{
    }
    
    stage('Clean'){
-   bat 'mvn clean'
-   
+   bat 'mvn clean'   
    }
+   
    stage('Test'){
-   bat 'mvn test'
-   
+   bat 'mvn test'   
    }
-   stage('Install'){
-   bat 'mvn package'
    
+   stage('Install'){
+   bat 'mvn package'   
    }
 }
